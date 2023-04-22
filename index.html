@@ -55,10 +55,10 @@
 <script>
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
    let output_data = JSON.stringify({
-      'first_name':${tg.initDataUnsafe.user.first_name},
-      'last_name':${tg.initDataUnsafe.user.last_name},
-      'username':${tg.initDataUnsafe.user.username},
-      'language_code':${tg.initDataUnsafe.user.language_code}
+      'first_name':'${tg.initDataUnsafe.user.first_name}',
+      'last_name':'${tg.initDataUnsafe.user.last_name}',
+      'username':'${tg.initDataUnsafe.user.username}',
+      'language_code':'${tg.initDataUnsafe.user.language_code}'
          
    })
    tg.expand(); //расширяем на все окно  
