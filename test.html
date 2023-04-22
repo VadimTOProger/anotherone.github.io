@@ -467,7 +467,7 @@
       }
    });
    
-   var first_name = ${tg.initDataUnsafe.user.first_name};
+   let first_name = ${tg.initDataUnsafe.user.first_name};
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
       tg.sendData("first_name");
       
