@@ -83,7 +83,12 @@
    });
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
       // smth
-      tg.sendData("some string that we need to send"); 
+      let output_dict = {
+         'key1':'value',
+         'int':42,
+         'list':[1,2,3]
+      }
+      tg.sendData(JSON.stringify(output_dict)); 
       //при клике на основную кнопку отправляем данные в строковом виде
    });
    let usercard = document.getElementById("usercard"); //получаем блок usercard 
