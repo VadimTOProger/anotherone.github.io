@@ -79,7 +79,13 @@
    });
    
    order.addEventListener("click", () => {
-    tg.close();
+      let data = {
+         name: document.getElementById("user_name").value,
+         email: document.getElementById("user_email").value,
+         phone: document.getElementById("user_phone").value,
+      }
+      tg.sendData(JSON.stringify(data)); 
+      tg.close();
    });
    
    tg.expand(); //расширяем на все окно  
