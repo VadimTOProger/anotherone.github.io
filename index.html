@@ -91,6 +91,11 @@
       tg.sendData(JSON.stringify(output_dict)); 
       //при клике на основную кнопку отправляем данные в строковом виде
    });
+   
+   // my approach to click button
+   tg.MainButton.onClick(() => {tg.sendData(JSON.stringify({'key':'value'))});
+   
+   
    let usercard = document.getElementById("usercard"); //получаем блок usercard 
    let profName = document.createElement('p'); //создаем параграф
    profName.innerText = `${tg.initDataUnsafe.user.first_name}
